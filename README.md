@@ -48,7 +48,7 @@ Location code for legendary beasts:
 - RichardPaulAstley for supporting and addresses finding
 - Sipanale for legendary beasts hunting scripts
 
-## New functionality
+# New functionality
 
-# Odd Egg
+## Odd Egg
 An adaptation of the gift script that automates siny hunting the Odd Egg. See the comments at the top of the script for instructions on filtering for a specific Pokemon, as well as when to start the script when receiving the egg.

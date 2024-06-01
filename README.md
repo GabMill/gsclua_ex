@@ -1,3 +1,6 @@
+# gsclua_ex fork
+This fork of gsclua is intended to extend the existing scripts and add new functionality. This README was copied from gsclua, see the end of the README for added functionality.
+
 # gsclua
 Lua scripts for shiny hunting in GSC games based off zep715's [rbylua](https://github.com/zep715/rbylua)   
 Work only with vba rr 23.6.
@@ -44,3 +47,8 @@ Location code for legendary beasts:
 - /u/Koroze23 for addresses finding and korean bots testing
 - RichardPaulAstley for supporting and addresses finding
 - Sipanale for legendary beasts hunting scripts
+
+## New functionality
+
+# Odd Egg
+An adaptation of the gift script that automates siny hunting the Odd Egg. See the comments at the top of the script for instructions on filtering for a specific Pokemon, as well as when to start the script when receiving the egg.

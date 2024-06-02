@@ -52,3 +52,6 @@ Location code for legendary beasts:
 
 # Odd Egg
 An adaptation of the gift script that automates siny hunting the Odd Egg. See the comments at the top of the script for instructions on filtering for a specific Pokemon, as well as when to start the script when receiving the egg.
+
+# Unown
+The unown script now has a toggleable parameter to hunt for shinies

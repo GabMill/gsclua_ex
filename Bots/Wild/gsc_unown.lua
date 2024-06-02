@@ -1,5 +1,6 @@
 --Edit parameters in this section
 local desired_letter = 'A'
+local find_shiny = true
 --End of parameters
 
 local atkdef
@@ -52,6 +53,15 @@ function getUnownForm(atkdef,spespc)
     return string.char(formid + 65)
 end
 
+function shiny(atkdef,spespc)
+    if spespc == 0xAA then
+        if atkdef == 0x2A or atkdef == 0x3A or atkdef == 0x6A or atkdef == 0x7A or atkdef == 0xAA or atkdef == 0xBA or atkdef == 0xEA or atkdef == 0xFA then
+            return true
+        end
+    end
+    return false
+end
+
 local state = savestate.create()
 while true do
     savestate.save(state)
@@ -85,9 +95,10 @@ while true do
         print(string.format("Atk: %d Def: %d Spe: %d Spc: %d", math.floor(atkdef/16), atkdef%16, math.floor(spespc/16), spespc%16))
 
         Form = getUnownForm(atkdef,spespc)
+        
         print(string.format("Form: %s", Form))
 
-        if Form == desired_letter then
+        if Form == desired_letter and ((!find_shiny) or (find_shiny and shiny(atkdef, spespc)))then
             print("Desired unown found!!!")
             savestate.save(state)
             break
